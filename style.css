@@ -198,10 +198,13 @@
     .gnavi__sp-style ul li a {
         display: block;
         color: #fff;
-        padding: 1em 0;
+        padding: 2em 0;
         text-decoration :none;
     }
     .gnavi__sp-style.active {
         opacity: 1;
+    }
+    footer{
+        display: none;
     }
   }
