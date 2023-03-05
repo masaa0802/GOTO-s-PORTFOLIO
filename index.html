@@ -7,9 +7,7 @@
    <!-- CSSファイルの読み込み -->
    <link rel="stylesheet" type="text/css" href="style.css">
    <!-- ライブラリ読み込み -->
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <!-- jsファイル読み込み -->
-   <script src=”index.js"></script>
+   <script src="jquery-3.6.3.min.js"></script>
 </head>
 <body>
    <header>
@@ -75,5 +73,18 @@
    <footer>
       <p>©︎ 2023 GOTO's PORTFOLIO. All Rights Reserved.</p>
    </footer>
+    <script>
+        $(function() {
+            $('.menu-btn').click(function() {
+                $(this).toggleClass('active');
+        
+                if ($(this).hasClass('active')) {
+                    $('.gnavi__sp-style').addClass('active');
+                } else {
+                    $('.gnavi__sp-style').removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
